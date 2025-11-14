@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 contact_name = "Mummy"     # exact name as saved in WhatsApp contacts; leave empty to send to currently open chat
-message = "Phone mukooo"
+message = "Hello"
 repeat_count = 20      # number of times to send the message
 
 pyautogui.PAUSE = 0.12
@@ -79,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

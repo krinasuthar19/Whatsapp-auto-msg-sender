@@ -1,44 +1,61 @@
 WhatsApp Auto Sender
+Overview
 
-A simple Python script that automatically sends messages through WhatsApp Desktop using PyAutoGUI and PyGetWindow.
+WhatsApp Auto Sender is a Python-based automation tool that sends messages through WhatsApp Desktop using GUI automation. It uses libraries like PyAutoGUI, PyGetWindow, and Pyperclip to control keyboard input and interact with the application window.
 
-📋 Features
+This tool allows users to send repeated messages or multiple custom messages automatically, reducing manual effort.
 
-Opens WhatsApp Desktop automatically
+Features
+Automatically opens WhatsApp Desktop
+Detects and focuses the WhatsApp window
+Sends a single message multiple times
+Supports sending multiple custom messages
+Works with any chat that is already open
+Tech Stack
+Python
+PyAutoGUI
+PyGetWindow
+Pyperclip
+Requirements
 
-Focuses the app window
-
-Sends your message multiple times
-
-Works with any chat that’s already open
-
-🧰 Requirements
-
-Install these Python packages before running:
+Install the required Python libraries:
 
 pip install pyautogui pygetwindow pyperclip
 
-▶️ How to Use
+How to Use
+Install WhatsApp Desktop from Microsoft Store and log in
+Open the chat where you want to send messages
+Run one of the scripts
 
-Make sure WhatsApp Desktop is installed and logged in.
+For sending the same message repeatedly:
 
-Open the chat where you want to send messages.
+python autowp.py
 
-Run the script:
+For sending multiple messages:
 
-python autowp.py # to repeateadly send string in same Message
-python autowp2.py # to send multiple messages
+python autowp2.py
 
+The script will automatically send messages to the selected chat
+Configuration
 
-The script will send your message automatically.
+For repeated message script (autowp.py):
 
-⚙️ Configuration
+message = "Hello!"
+repeat_count = 10
 
-You can edit these variables in the script:
+For multiple messages script (autowp2.py):
 
-message = "Hello!"      # Message to send
-repeat_count = 10       # Number of times to send
+messages = ["Hi", "How are you?", "This is automated"]
 
-⚠️ Note
+Limitations
+Works only with WhatsApp Desktop (Microsoft Store version)
+Requires the chat window to be open before running the script
+Performance may vary depending on system speed and screen resolution
+GUI automation may fail if the active window changes during execution
+Use Cases
+Sending repeated notifications
+Automating reminders
+Testing message automation workflows
+Disclaimer
 
-This script only works with WhatsApp Desktop (from Microsoft Store), not WhatsApp Web.
+This project is intended for educational purposes only. Automating messaging may violate WhatsApp policies. Use responsibly.

@@ -91,7 +91,3 @@ messages = ["Hi", "How are you?", "This is automated"]
 * Automating reminders
 * Testing message automation workflows
 
-````
-
----
-
